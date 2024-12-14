@@ -59,6 +59,13 @@ Section:AddButton({
           ]]
           
           Tab:AddButton({
+            Name = "Cokka Hub (tem key)",
+            Callback = function()
+                 loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+             end
+        })
+
+          Tab:AddButton({
               Name = "Redz Hub",
               Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
@@ -338,6 +345,12 @@ Section:AddButton({
               Icon = "rbxassetid://134864875487083",
               PremiumOnly = false
           })
+          Tab:AddButton({
+            Name = "kalitor",
+            Callback = function()
+                 loadstring(jogo:HttpGet("https://raw.githubusercontent.com/redopy7/Blade-Ball/refs/heads/main/Kalitor"))()
+             end
+        })
         else
           OrionLib:MakeNotification({
             Name = "A key não está correta!",
